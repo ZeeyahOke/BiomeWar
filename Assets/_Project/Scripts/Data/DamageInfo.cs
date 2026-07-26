@@ -2,6 +2,11 @@ using UnityEngine;
 
 namespace BiomeWar
 {
+    /// <summary>
+    /// Carries all context about a damage event. Passing a struct instead of a
+    /// float means new fields (crit, element, knockback) can be added later
+    /// without changing every IDamageable implementation.
+    /// </summary>
     public struct DamageInfo
     {
         public float Amount;

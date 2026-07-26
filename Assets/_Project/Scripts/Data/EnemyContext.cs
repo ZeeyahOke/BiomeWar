@@ -2,6 +2,11 @@ using UnityEngine;
 
 namespace BiomeWar
 {
+    /// <summary>
+    /// Everything a behaviour Strategy needs to operate, bundled into one object.
+    /// Behaviours receive this on Initialise, so they never reach back into
+    /// the enemy controller or any concrete Unity component.
+    /// </summary>
     public class EnemyContext
     {
         public Transform Self;
