@@ -18,6 +18,11 @@ namespace BiomeWar
             base.Awake();
             if (Instance != this) return;
             Load();
+            Save();
+
+        #if UNITY_EDITOR
+            Debug.Log($"[SaveManager] Save path: {FilePath}");
+        #endif
         }
 
         public void Load()
