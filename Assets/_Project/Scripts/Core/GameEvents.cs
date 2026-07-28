@@ -31,6 +31,9 @@ namespace BiomeWar
         public static event Action<GameStateId> OnGameStateChanged;
         public static event Action<int> OnScoreChanged;
 
+        public static event Action<float> OnPrepTimeTick;
+        public static event Action OnPrepTimeEnded;
+
         public static void RaisePlayerHealthChanged(float current, float max)
             => OnPlayerHealthChanged?.Invoke(current, max);
 
@@ -76,6 +79,12 @@ namespace BiomeWar
         public static void RaiseScoreChanged(int score)
             => OnScoreChanged?.Invoke(score);
 
+        public static void RaisePrepTimeTick(float remaining)
+        => OnPrepTimeTick?.Invoke(remaining);
+
+        public static void RaisePrepTimeEnded()
+        => OnPrepTimeEnded?.Invoke();
+
         public static void ClearAll()
         {
             OnPlayerHealthChanged = null;
@@ -93,6 +102,8 @@ namespace BiomeWar
             OnLevelUnlocked = null;
             OnGameStateChanged = null;
             OnScoreChanged = null;
+            OnPrepTimeTick = null;
+            OnPrepTimeEnded = null;
         }
     }
 }

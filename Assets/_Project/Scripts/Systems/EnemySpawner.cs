@@ -12,16 +12,43 @@ namespace BiomeWar
 
         readonly List<GameObject> spawned = new List<GameObject>();
 
+        float prepRemaining;
+        bool spawned_;
+
         void Start()
         {
             if (config == null || spawnPoints == null || spawnPoints.Length == 0)
             {
                 Debug.LogError("EnemySpawner needs a LevelConfig and at least one spawn point.");
+                enabled = false;
                 return;
             }
 
+            prepRemaining = config.PrepTimeSeconds;
+
+            if (prepRemaining <= 0f) BeginAssault();
+            else GameEvents.RaisePrepTimeTick(prepRemaining);
+        }
+
+        void Update()
+        {
+            if (spawned_ || prepRemaining <= 0f) return;
+            if (GameManager.Exists && GameManager.Instance.CurrentStateId != GameStateId.Playing) return;
+
+            prepRemaining -= Time.deltaTime;
+            GameEvents.RaisePrepTimeTick(Mathf.Max(0f, prepRemaining));
+
+            if (prepRemaining <= 0f) BeginAssault();
+        }
+
+        void BeginAssault()
+        {
+            if (spawned_) return;
+            spawned_ = true;
+
             SpawnGroups();
             SpawnBoss();
+            GameEvents.RaisePrepTimeEnded();
         }
 
         void SpawnGroups()

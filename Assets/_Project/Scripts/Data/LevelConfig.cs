@@ -38,6 +38,10 @@ namespace BiomeWar
         [Header("Audio")]
         public AudioClip MusicTrack;
 
+        [Header("Pacing")]
+        [Tooltip("Seconds before enemies spawn, giving the player time to explore.")]
+        public float PrepTimeSeconds = 60f;
+
         public int TotalEnemies
         {
             get

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8377500121867682825}
   - component: {fileID: 2510423131788214257}
   - component: {fileID: 8995767489831740929}
+  - component: {fileID: 1012480277066804185}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -95,3 +96,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BiomeWar.PoolManager
   persistAcrossScenes: 1
   defaultPoolSize: 20
+--- !u!114 &1012480277066804185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5668202569035326667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b591f2d2b4084aeaa9080c80d95a974, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BiomeWar.LevelManager
+  persistAcrossScenes: 1
+  levels: []
+  mainMenuScene: MainMenu
