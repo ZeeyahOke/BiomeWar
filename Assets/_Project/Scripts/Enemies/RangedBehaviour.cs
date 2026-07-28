@@ -40,7 +40,7 @@ namespace BiomeWar
                 : ctx.Self.position + Vector3.up * 1.2f;
 
             // Aim at chest height rather than the player's feet.
-            Vector3 aim = ctx.Target.position + Vector3.up * 1f;
+            Vector3 aim = ctx.Target.position;
             Vector3 dir = (aim - origin).normalized;
 
             GameObject go = PoolManager.Instance.Spawn(ctx.ProjectilePrefab, origin, Quaternion.LookRotation(dir));
