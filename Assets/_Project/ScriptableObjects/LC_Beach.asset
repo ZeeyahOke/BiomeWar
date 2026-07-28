@@ -16,10 +16,19 @@ MonoBehaviour:
   LevelName: Beach
   SceneName: Level_01_Beach
   Thumbnail: {fileID: 0}
-  BiomeDescription: 
-  ObjectiveText: 
-  SpawnGroups: []
+  BiomeDescription: A stretch of beach scattered with wrecked boats and washed-up
+    debris. Enemy forces have moved in along the shoreline. This is the first position
+    to take before pushing inland.
+  ObjectiveText: Eliminate all enemies to complete the level. Three relics are hidden
+    around the map - each one you collect earns a star. Find all three for a full
+    three-star rating.
+  SpawnGroups:
+  - Config: {fileID: 11400000, guid: c16df749d1677441199f27b9d87f53d9, type: 2}
+    Count: 15
+  - Config: {fileID: 11400000, guid: 9bce966e731514fc3b7beb202db85ad5, type: 2}
+    Count: 15
   CollectableCount: 3
   HasBoss: 0
   BossConfig: {fileID: 0}
   MusicTrack: {fileID: 0}
+  PrepTimeSeconds: 0
