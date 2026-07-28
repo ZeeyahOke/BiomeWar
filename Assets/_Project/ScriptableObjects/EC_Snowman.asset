@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bdd7b44127014cfe8fb4dc7ed0a76c6, type: 3}
+  m_Name: EC_Snowman
+  m_EditorClassIdentifier: Assembly-CSharp::BiomeWar.EnemyConfig
+  EnemyName: Enemy
+  Prefab: {fileID: 2026148113116620536, guid: 95f5d92ef4c5244218c458f1fa597bba, type: 3}
+  Behaviour: 1
+  AnimatorDriver: 1
+  MaxHealth: 60
+  MoveSpeed: 0
+  TurnSpeed: 8
+  AttackDamage: 14
+  AttackRange: 30
+  AttackCooldown: 1.5
+  DetectionRange: 30
+  ProjectilePrefab: {fileID: 7749705278529842161, guid: 2bd53aae9eaa945a1b5742f952a8c184, type: 3}
+  ProjectileSpeed: 20
+  FrontalDamageReduction: 0.8
+  BlockAngle: 90
+  ScoreValue: 175
+  AggroSound: {fileID: 0}
+  AttackSound: {fileID: 0}
+  DeathSound: {fileID: 0}

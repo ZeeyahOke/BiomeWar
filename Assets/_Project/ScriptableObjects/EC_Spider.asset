@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bdd7b44127014cfe8fb4dc7ed0a76c6, type: 3}
+  m_Name: EC_Spider
+  m_EditorClassIdentifier: Assembly-CSharp::BiomeWar.EnemyConfig
+  EnemyName: Spider
+  Prefab: {fileID: 6650524740468932169, guid: 422cc5a049e2e47219830efcba559656, type: 3}
+  Behaviour: 2
+  AnimatorDriver: 0
+  MaxHealth: 300
+  MoveSpeed: 3
+  TurnSpeed: 2
+  AttackDamage: 25
+  AttackRange: 3
+  AttackCooldown: 1.5
+  DetectionRange: 20
+  ProjectilePrefab: {fileID: 0}
+  ProjectileSpeed: 12
+  FrontalDamageReduction: 0.8
+  BlockAngle: 90
+  ScoreValue: 500
+  AggroSound: {fileID: 0}
+  AttackSound: {fileID: 0}
+  DeathSound: {fileID: 0}

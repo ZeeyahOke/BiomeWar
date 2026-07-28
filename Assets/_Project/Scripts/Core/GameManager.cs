@@ -32,7 +32,7 @@ namespace BiomeWar
             LevelComplete = new LevelCompleteState(this);
             GameOver = new GameOverState(this);
 
-            _states.ChangeState(MainMenu);
+            _states.ChangeState(Playing);
         }
 
         private void Update() => _states.Tick(Time.unscaledDeltaTime);

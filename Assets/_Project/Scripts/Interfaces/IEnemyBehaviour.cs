@@ -9,6 +9,7 @@ namespace BiomeWar
     {
         void Initialise(EnemyContext context);
         void Tick(float deltaTime);
+        void Attack();
         void Exit();
     }
 }
