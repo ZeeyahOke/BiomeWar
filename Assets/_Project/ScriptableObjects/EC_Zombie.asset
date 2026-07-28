@@ -22,7 +22,7 @@ MonoBehaviour:
   AttackDamage: 12
   AttackRange: 2
   AttackCooldown: 1.5
-  DetectionRange: 15
+  DetectionRange: 30
   ProjectilePrefab: {fileID: 0}
   ProjectileSpeed: 12
   FrontalDamageReduction: 0.8

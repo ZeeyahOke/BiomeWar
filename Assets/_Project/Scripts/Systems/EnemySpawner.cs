@@ -65,7 +65,7 @@ namespace BiomeWar
                     pointIndex++;
 
                     Vector2 offset = Random.insideUnitCircle * spawnRadius;
-                    Vector3 pos = point.position + new Vector3(offset.x, 0f, offset.y);
+                    Vector3 pos = point.position + new Vector3(offset.x, 20f, offset.y);
 
                     var go = Instantiate(group.Config.Prefab, pos, point.rotation);
                     spawned.Add(go);

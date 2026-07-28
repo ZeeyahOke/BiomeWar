@@ -24,11 +24,11 @@ MonoBehaviour:
     three-star rating.
   SpawnGroups:
   - Config: {fileID: 11400000, guid: c16df749d1677441199f27b9d87f53d9, type: 2}
-    Count: 15
+    Count: 6
   - Config: {fileID: 11400000, guid: 9bce966e731514fc3b7beb202db85ad5, type: 2}
-    Count: 15
+    Count: 3
   CollectableCount: 3
   HasBoss: 0
   BossConfig: {fileID: 0}
   MusicTrack: {fileID: 0}
-  PrepTimeSeconds: 0
+  PrepTimeSeconds: 40
