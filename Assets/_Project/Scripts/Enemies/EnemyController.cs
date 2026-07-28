@@ -172,5 +172,10 @@ namespace BiomeWar
             Gizmos.color = Color.red;
             Gizmos.DrawWireSphere(transform.position, config.AttackRange);
         }
+
+        public void MarkAsBoss()
+        {
+            isBoss = true;
+        }
     }
 }
