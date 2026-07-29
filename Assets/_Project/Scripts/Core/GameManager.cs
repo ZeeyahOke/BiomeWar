@@ -22,8 +22,6 @@ namespace BiomeWar
             base.Awake();
             if (Instance != this) return;
 
-            GameEvents.ClearAll();
-
             MainMenu = new MainMenuState(this);
             LevelSelect = new LevelSelectState(this);
             Briefing = new BriefingState(this);

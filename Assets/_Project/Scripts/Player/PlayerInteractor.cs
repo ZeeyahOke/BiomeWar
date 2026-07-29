@@ -41,9 +41,12 @@ namespace BiomeWar
 
             if (!Physics.Raycast(ray, out RaycastHit hit, range, interactMask)) return;
 
+                Debug.Log($"Ray hit: {hit.collider.name}");
+
             var candidate = hit.collider.GetComponentInParent<IInteractable>();
             if (candidate != null && candidate.CanInteract(gameObject))
                 current = candidate;
+                
         }
     }
 }

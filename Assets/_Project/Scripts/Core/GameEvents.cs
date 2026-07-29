@@ -6,6 +6,11 @@ namespace BiomeWar
     /// <summary>Observer pattern event bus. Decouples gameplay, UI, audio and VFX.</summary>
     public static class GameEvents
     {
+        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
+        static void ResetOnLoad()
+        {
+            ClearAll();
+        }
         // Player
         public static event Action<float, float> OnPlayerHealthChanged;
         public static event Action<DamageInfo> OnPlayerDamaged;
