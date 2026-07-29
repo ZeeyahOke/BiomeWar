@@ -80,7 +80,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BiomeWar.SlamAbility
   displayName: Ability
   icon: {fileID: 0}
-  cooldown: 5
+  cooldown: 2
   radius: 12
   damage: 45
   targetLayers:
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7b7295fe94bd46ff81d444ba24fbcb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BiomeWar.PlayerController
-  moveSpeed: 6
+  moveSpeed: 12
   gravity: -20
   cameraPivot: {fileID: 106960843174243734}
   mouseSensitivity: 0.12
@@ -119,8 +119,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BiomeWar.DashAbility
   displayName: Ability
   icon: {fileID: 0}
-  cooldown: 5
-  dashDistance: 6
+  cooldown: 2
+  dashDistance: 10
   dashDuration: 0.15
 --- !u!114 &6380300331389664851
 MonoBehaviour:
@@ -134,10 +134,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49b0ce4ff3da3492c8d1eccf5cc5820a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BiomeWar.PlayerDamageFeedback
-  bloodOverlay: {fileID: 0}
-  flashAlpha: 0.55
+  bloodOverlay: {fileID: 6470658381416546352, guid: f1c1676abf7c14f4cbc712975dd2fd51, type: 3}
+  flashAlpha: 1
   fadeSpeed: 1.8
-  shakeTarget: {fileID: 0}
+  shakeTarget: {fileID: 106960843174243734}
   shakeAmount: 0.08
   shakeTime: 0.12
 --- !u!114 &1646139626172793322

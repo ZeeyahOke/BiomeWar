@@ -48,6 +48,7 @@ namespace BiomeWar
         public void ReloadCurrentLevel()
         {
             if (CurrentLevel != null) SceneManager.LoadScene(CurrentLevel.SceneName);
+            else SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
         public void LoadNextLevel()
@@ -78,5 +79,7 @@ namespace BiomeWar
             if (GameManager.Exists)
                 GameManager.Instance.ChangeState(GameManager.Instance.LevelComplete);
         }
+
+        
     }
 }
