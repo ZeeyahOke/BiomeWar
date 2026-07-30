@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2510423131788214257}
   - component: {fileID: 8995767489831740929}
   - component: {fileID: 1012480277066804185}
+  - component: {fileID: 2289789749182540716}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -111,3 +112,18 @@ MonoBehaviour:
   persistAcrossScenes: 1
   levels: []
   mainMenuScene: MainMenu
+--- !u!114 &2289789749182540716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5668202569035326667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f4417f3e62e44cbeb5b36ce4a9d9355, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BiomeWar::BiomeWar.DailyChallengeService
+  persistAcrossScenes: 1
+  challengeUrl: https://raw.githubusercontent.com/ZeeyahOke/BiomeWar/refs/heads/main/config/challenges.json
+  timeoutSeconds: 8

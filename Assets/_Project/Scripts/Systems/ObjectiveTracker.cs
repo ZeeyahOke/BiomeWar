@@ -86,6 +86,12 @@ namespace BiomeWar
             int stars = StarCalculator.Calculate(collectablesFound, collectablesTotal);
             score += stars * 250;
 
+            float scoreMult = DailyChallengeService.Exists
+                ? DailyChallengeService.Instance.Active.scoreMultiplier
+                : 1f;
+
+            score = Mathf.RoundToInt(score * scoreMult);
+
             var result = new LevelResult(
                 config.LevelIndex,
                 enemiesDefeated,

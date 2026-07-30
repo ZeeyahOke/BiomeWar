@@ -49,16 +49,21 @@ namespace BiomeWar
 
             var player = GameObject.FindGameObjectWithTag("Player");
 
+            // Remote daily challenge scales enemy stats. Defaults to 1.0 when offline.
+            var challenge = DailyChallengeService.Exists
+                ? DailyChallengeService.Instance.Active
+                : ChallengeModifier.Default();
+
             ctx = new EnemyContext
             {
                 Self = transform,
                 Target = player != null ? player.transform : null,
                 TargetDamageable = player != null ? player.GetComponent<IDamageable>() : null,
                 Animator = enemyAnimator,
-                MoveSpeed = config.MoveSpeed,
+                MoveSpeed = config.MoveSpeed * challenge.enemySpeedMultiplier,
                 TurnSpeed = config.TurnSpeed,
                 AttackRange = config.AttackRange,
-                AttackDamage = config.AttackDamage,
+                AttackDamage = config.AttackDamage * challenge.enemyDamageMultiplier,
                 AttackCooldown = config.AttackCooldown,
                 DetectionRange = config.DetectionRange,
                 ProjectilePrefab = config.ProjectilePrefab,
@@ -66,7 +71,8 @@ namespace BiomeWar
             };
 
             bool defensive = config.Behaviour == EnemyBehaviourType.Defensive;
-            health.Configure(config.MaxHealth, defensive, config.FrontalDamageReduction, config.BlockAngle);
+            health.Configure(config.MaxHealth * challenge.enemyHealthMultiplier,
+                            defensive, config.FrontalDamageReduction, config.BlockAngle);
 
             behaviour = EnemyBehaviourFactory.Create(config.Behaviour);
             behaviour.Initialise(ctx);
