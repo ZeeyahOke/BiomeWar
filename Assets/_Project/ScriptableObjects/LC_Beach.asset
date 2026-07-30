@@ -15,7 +15,7 @@ MonoBehaviour:
   LevelIndex: 0
   LevelName: Beach
   SceneName: Level_01_Beach
-  Thumbnail: {fileID: 0}
+  Thumbnail: {fileID: 21300000, guid: 3e62a0b42c13d4eb3bb8b95953a1d037, type: 3}
   BiomeDescription: A stretch of beach scattered with wrecked boats and washed-up
     debris. Enemy forces have moved in along the shoreline. This is the first position
     to take before pushing inland.
