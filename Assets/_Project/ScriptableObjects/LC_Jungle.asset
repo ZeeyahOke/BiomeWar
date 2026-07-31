@@ -32,5 +32,5 @@ MonoBehaviour:
   CollectableCount: 3
   HasBoss: 1
   BossConfig: {fileID: 11400000, guid: 508b78a1251124af2ba790796d15824b, type: 2}
-  MusicTrack: {fileID: 0}
+  MusicTrack: {fileID: 8300000, guid: 6fdc47ccd678848b59aa3f50bda1632f, type: 3}
   PrepTimeSeconds: 40

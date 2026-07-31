@@ -8,7 +8,7 @@ namespace BiomeWar
         [SerializeField] Slider musicSlider;
         [SerializeField] Slider sfxSlider;
 
-        void Start()
+        void OnEnable()
         {
             if (!SaveManager.Exists) return;
 
@@ -16,13 +16,15 @@ namespace BiomeWar
 
             if (musicSlider != null)
             {
-                musicSlider.value = settings.MusicVolume;
+                musicSlider.onValueChanged.RemoveListener(OnMusicChanged);
+                musicSlider.SetValueWithoutNotify(settings.MusicVolume);
                 musicSlider.onValueChanged.AddListener(OnMusicChanged);
             }
 
             if (sfxSlider != null)
             {
-                sfxSlider.value = settings.SfxVolume;
+                sfxSlider.onValueChanged.RemoveListener(OnSfxChanged);
+                sfxSlider.SetValueWithoutNotify(settings.SfxVolume);
                 sfxSlider.onValueChanged.AddListener(OnSfxChanged);
             }
         }
@@ -31,7 +33,7 @@ namespace BiomeWar
         {
             if (!SaveManager.Exists) return;
             SaveManager.Instance.Data.Settings.MusicVolume = value;
-           // if (AudioManager.Exists) AudioManager.Instance.SetMusicVolume(value);
+            if (AudioManager.Exists) AudioManager.Instance.SetMusicVolume(value);
         }
 
         void OnSfxChanged(float value)
