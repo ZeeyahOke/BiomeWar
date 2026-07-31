@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bdd7b44127014cfe8fb4dc7ed0a76c6, type: 3}
   m_Name: EC_Snowman
   m_EditorClassIdentifier: Assembly-CSharp::BiomeWar.EnemyConfig
-  EnemyName: Enemy
+  EnemyName: Snowman
   Prefab: {fileID: 2026148113116620536, guid: 95f5d92ef4c5244218c458f1fa597bba, type: 3}
   Behaviour: 1
   AnimatorDriver: 1
