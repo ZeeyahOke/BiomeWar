@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 6965171536503666495}
   - component: {fileID: 3942764517224925010}
   - component: {fileID: 8693022786997656974}
-  m_Layer: 0
+  - component: {fileID: 6440609528373310319}
+  m_Layer: 6
   m_Name: Snow Man
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -126,6 +127,26 @@ CapsuleCollider:
   m_Height: 11.454679
   m_Direction: 1
   m_Center: {x: 0.015984774, y: -0.106434226, z: 0}
+--- !u!114 &6440609528373310319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2026148113116620536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bde3a3f2d95d948b895e0e6b5fac94ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BiomeWar::BiomeWar.GroundSnap
+  fallSpeed: 15
+  rayHeight: 1.5
+  rayLength: 20
+  groundOffset: 1
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 1
+  logRaycast: 1
 --- !u!1 &3668965831892107803
 GameObject:
   m_ObjectHideFlags: 0
@@ -137,7 +158,7 @@ GameObject:
   - component: {fileID: 8158695666196473465}
   - component: {fileID: 3630298671384022117}
   - component: {fileID: 7925691348134895265}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Hat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -225,7 +246,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6614596806704826319}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: firepoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -258,7 +279,7 @@ GameObject:
   - component: {fileID: 6005370489190975533}
   - component: {fileID: 7817750574874684179}
   - component: {fileID: 3411807719908396589}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Body_Lower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -348,7 +369,7 @@ GameObject:
   - component: {fileID: 4838236579751674586}
   - component: {fileID: 7093248279348634968}
   - component: {fileID: 2273381028700442041}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -438,7 +459,7 @@ GameObject:
   - component: {fileID: 8086687932113613100}
   - component: {fileID: 8761999262483796320}
   - component: {fileID: 5183228556632299433}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: R_Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -528,7 +549,7 @@ GameObject:
   - component: {fileID: 94841846956873534}
   - component: {fileID: 1120507076144771695}
   - component: {fileID: 5164742328459655972}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: L_Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -618,7 +639,7 @@ GameObject:
   - component: {fileID: 6447296630003742980}
   - component: {fileID: 8510092439402617705}
   - component: {fileID: 3030555473592292473}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Body_Stomach
   m_TagString: Untagged
   m_Icon: {fileID: 0}

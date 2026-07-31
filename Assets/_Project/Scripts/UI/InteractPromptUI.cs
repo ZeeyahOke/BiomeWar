@@ -18,7 +18,13 @@ namespace BiomeWar
             if (label.gameObject.activeSelf != show)
                 label.gameObject.SetActive(show);
 
-            if (show) label.text = $"[E] {prompt}";
+            if (!show) return;
+
+#if UNITY_ANDROID || UNITY_IOS
+            label.text = prompt;
+#else
+            label.text = $"[E] {prompt}";
+#endif
         }
     }
 }

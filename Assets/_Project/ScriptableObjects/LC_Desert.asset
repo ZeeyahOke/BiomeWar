@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0787e0399aaf44e32af77222918e0052, type: 3}
+  m_Name: LC_Desert
+  m_EditorClassIdentifier: Assembly-CSharp::BiomeWar.LevelConfig
+  LevelIndex: 2
+  LevelName: Dry Basin
+  SceneName: Level_03_Desert
+  Thumbnail: {fileID: 21300000, guid: c545be7fefbff4d89b4d9d94c2004914, type: 3}
+  BiomeDescription: Open desert with little cover and long sightlines. The heat has
+    preserved what's out here far better than it should have. Expect slower enemies
+    that take considerably more punishment.
+  ObjectiveText: Eliminate all enemies to complete the level. Three relics are hidden
+    around the map - each one you collect earns a star. Find all three for a full
+    three-star rating.
+  SpawnGroups:
+  - Config: {fileID: 11400000, guid: e80817798f8694b42a1a32c451d254a8, type: 2}
+    Count: 6
+  - Config: {fileID: 11400000, guid: 9bce966e731514fc3b7beb202db85ad5, type: 2}
+    Count: 6
+  CollectableCount: 3
+  HasBoss: 0
+  BossConfig: {fileID: 0}
+  MusicTrack: {fileID: 0}
+  PrepTimeSeconds: 40

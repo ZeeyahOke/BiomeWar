@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0787e0399aaf44e32af77222918e0052, type: 3}
+  m_Name: LC_Camp
+  m_EditorClassIdentifier: Assembly-CSharp::BiomeWar.LevelConfig
+  LevelIndex: 1
+  LevelName: Forest Camp
+  SceneName: Level_02_Camp
+  Thumbnail: {fileID: 21300000, guid: fa18efb1e9ccd46ddb09615d3f3fba14, type: 3}
+  BiomeDescription: An abandoned camp in the treeline, inland from the shore. Tents
+    and supply crates are still standing, but whatever was stationed here didn't
+    leave on its own. The enemies here move faster than those on the beach.
+  ObjectiveText: Eliminate all enemies to complete the level. Three relics are hidden
+    around the map - each one you collect earns a star. Find all three for a full
+    three-star rating.
+  SpawnGroups:
+  - Config: {fileID: 11400000, guid: c16df749d1677441199f27b9d87f53d9, type: 2}
+    Count: 5
+  - Config: {fileID: 11400000, guid: 9bce966e731514fc3b7beb202db85ad5, type: 2}
+    Count: 8
+  CollectableCount: 3
+  HasBoss: 0
+  BossConfig: {fileID: 0}
+  MusicTrack: {fileID: 0}
+  PrepTimeSeconds: 40

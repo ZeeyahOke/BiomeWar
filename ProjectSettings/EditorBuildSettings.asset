@@ -14,5 +14,17 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Project/Scenes/Level_01_Beach.unity
     guid: 14ba93b0905ec42f2841845f7cc5505c
+  - enabled: 1
+    path: Assets/_Project/Scenes/Level_02_Camp.unity
+    guid: ea62ef909062f40359f563f758b59a4c
+  - enabled: 1
+    path: Assets/_Project/Scenes/Level_03_Desert.unity
+    guid: f202ec5a5c1484298940c168d728b38e
+  - enabled: 1
+    path: Assets/_Project/Scenes/Level_04_Snow.unity
+    guid: f36af27adb59148e1ac1e190d21ccc61
+  - enabled: 1
+    path: Assets/_Project/Scenes/Level_05_Jungle.unity
+    guid: b3bc0d7c354c549c78933f7d89345352
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}

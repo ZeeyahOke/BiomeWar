@@ -8,6 +8,8 @@ namespace BiomeWar
         [SerializeField] TextMeshProUGUI label;
         [SerializeField] bool showDescription = true;
 
+        void Start() => Refresh();
+
         void OnEnable()
         {
             if (DailyChallengeService.Exists)

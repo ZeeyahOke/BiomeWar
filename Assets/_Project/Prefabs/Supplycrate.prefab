@@ -127,7 +127,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BiomeWar.SupplyCrate
   healAmount: 35
   singleUse: 1
-  openSound: {fileID: 0}
+  openSound: {fileID: 8300000, guid: 07e0a1fd106eb4eb5a20679f168f064c, type: 3}
   openEffect: {fileID: 0}
   renderersToDim:
   - {fileID: 3917837432294597225}

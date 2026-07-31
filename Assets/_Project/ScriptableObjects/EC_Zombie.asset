@@ -22,12 +22,12 @@ MonoBehaviour:
   AttackDamage: 12
   AttackRange: 2
   AttackCooldown: 1.5
-  DetectionRange: 30
+  DetectionRange: 10
   ProjectilePrefab: {fileID: 0}
   ProjectileSpeed: 12
   FrontalDamageReduction: 0.8
   BlockAngle: 90
   ScoreValue: 100
   AggroSound: {fileID: 0}
-  AttackSound: {fileID: 0}
+  AttackSound: {fileID: 8300000, guid: fd9c77ebbbed746e681edc787c49001b, type: 3}
   DeathSound: {fileID: 0}

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1554972347635190290}
   - component: {fileID: 3574862205976219288}
   - component: {fileID: 6013802754129135768}
+  - component: {fileID: 4281976325722721400}
   m_Layer: 0
   m_Name: Spider_Enemy
   m_TagString: Untagged
@@ -30,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.4, y: 0, z: 19.4}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 9203687430493828757}
@@ -115,6 +116,26 @@ MonoBehaviour:
   config: {fileID: 11400000, guid: 508b78a1251124af2ba790796d15824b, type: 2}
   firePoint: {fileID: 0}
   isBoss: 1
+--- !u!114 &4281976325722721400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6650524740468932169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bde3a3f2d95d948b895e0e6b5fac94ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: BiomeWar::BiomeWar.GroundSnap
+  fallSpeed: 15
+  rayHeight: 3
+  rayLength: 20
+  groundOffset: 0
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 1
+  logRaycast: 0
 --- !u!1001 &893142291290020291
 PrefabInstance:
   m_ObjectHideFlags: 0

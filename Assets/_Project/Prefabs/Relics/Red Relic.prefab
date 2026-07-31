@@ -133,7 +133,7 @@ MonoBehaviour:
   spinSpeed: 60
   bobHeight: 0.2
   bobSpeed: 2
-  collectSound: {fileID: 0}
+  collectSound: {fileID: 8300000, guid: 688ff9350a5bf46859f618f193f781f3, type: 3}
   collectEffect: {fileID: 0}
 --- !u!54 &6948182461745177067
 Rigidbody:

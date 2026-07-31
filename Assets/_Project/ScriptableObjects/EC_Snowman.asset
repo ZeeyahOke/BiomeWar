@@ -20,9 +20,9 @@ MonoBehaviour:
   MoveSpeed: 0
   TurnSpeed: 8
   AttackDamage: 14
-  AttackRange: 30
+  AttackRange: 8
   AttackCooldown: 1.5
-  DetectionRange: 30
+  DetectionRange: 12
   ProjectilePrefab: {fileID: 7749705278529842161, guid: 2bd53aae9eaa945a1b5742f952a8c184, type: 3}
   ProjectileSpeed: 20
   FrontalDamageReduction: 0.8

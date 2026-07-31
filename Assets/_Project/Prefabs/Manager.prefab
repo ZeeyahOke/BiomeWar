@@ -110,7 +110,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BiomeWar.LevelManager
   persistAcrossScenes: 1
-  levels: []
+  levels:
+  - {fileID: 11400000, guid: 11cef9167941b40bbb64885ec2b9ec8a, type: 2}
+  - {fileID: 11400000, guid: 61e0cec907e0e4bec99729be4fada2be, type: 2}
+  - {fileID: 11400000, guid: a344d363248f44ad3bffca8c075716d1, type: 2}
+  - {fileID: 11400000, guid: ac027a536cd21450bb6d5767e4c09fa2, type: 2}
+  - {fileID: 11400000, guid: bfca5ce0b098a4afe8c5a6f50545a762, type: 2}
   mainMenuScene: MainMenu
 --- !u!114 &2289789749182540716
 MonoBehaviour:
